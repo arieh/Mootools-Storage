@@ -3,6 +3,7 @@ Storage
 This Class supplies an interface for a cross-browser local storage. For browsers that support this feature (FF2+, IE5+, Safari 4+) it will use the built in storage mechanism. For other browsers it will use Cookies.
 
 The Current Browser Support:
+
   * IE8+, FF3.5+, Safari 4+ : Will use the HTML5 localStorage API
   * FF<3.5 : Will use the globalStorage API
   * For all others, will use cookies to store data (maybe later I will add Flash Cookie storage).  
