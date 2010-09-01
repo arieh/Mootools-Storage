@@ -1,4 +1,4 @@
-Storage
+MooStorage
 ===========
 This Class supplies an interface for a cross-browser local storage. For browsers that support this feature (FF2+, IE5+, Safari 4+) it will use the built in storage mechanism. For other browsers it will use Cookies.
 

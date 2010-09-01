@@ -10,7 +10,7 @@ authors:
 requires:
 - core/1.2.4 : [Core,Class,Class.Extras,Cookie]
 
-provides: [Storage]
+provides: [MooStorage]
 
 ...
 */
@@ -37,7 +37,7 @@ THE SOFTWARE
 */
 (function($,window,undef){
 
-window['Storage'] = new Class({
+window['MooStorage'] = new Class({
     Implements : [Options]
     , options : {
           path : '*'
