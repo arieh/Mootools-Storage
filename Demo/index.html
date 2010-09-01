@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+    <a href="javascript:;" id='set'>set</a>
+    <a href="javascript:;" id='get'>get</a>
+    <div id="res"></div>
+	<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/mootools/1.2.4/mootools-yui-compressed.js'></script>
+    <script type="text/javascript" src="../Source/Storage.js"></script>
+    <script type="text/javascript">
+    var st = new Storage();
+    
+    $('set').addEvent('click',function(){st.set('name',{a:1,b:2})});
+    $('get').addEvent('click',function(){
+        $('res').set('html',st.get('name').a);
+    });
+    </script>
+</body>
+</html>
