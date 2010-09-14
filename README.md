@@ -13,7 +13,7 @@ How To Use
 Pretty simple - initialize, then use the setters and getters:
 
     #JS
-    var st = new Storage();
+    var st = new LocalStorage();
     
     st.set('name',{a:'aaa',b:'bbb'});
     
