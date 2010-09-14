@@ -11,7 +11,7 @@
 	<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/mootools/1.2.4/mootools-yui-compressed.js'></script>
     <script type="text/javascript" src="../Source/Storage.js"></script>
     <script type="text/javascript">
-    var st = new MooStorage();
+    var st = new MooStorage({debug:true});
     
     $('set').addEvent('click',function(){st.set('name',{a:1,b:2})});
     $('get').addEvent('click',function(){
