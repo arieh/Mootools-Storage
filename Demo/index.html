@@ -9,9 +9,9 @@
     <a href="javascript:;" id='get'>get</a>
     <div id="res"></div>
 	<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/mootools/1.2.4/mootools-yui-compressed.js'></script>
-    <script type="text/javascript" src="../Source/Storage.js"></script>
+    <script type="text/javascript" src="../Source/LocalStorage.js"></script>
     <script type="text/javascript">
-    var st = new MooStorage({debug:true});
+    var st = new LocalStorage({debug:true});
     
     $('set').addEvent('click',function(){st.set('name',{a:1,b:2})});
     $('get').addEvent('click',function(){
