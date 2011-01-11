@@ -85,7 +85,7 @@ var LocalStorage = this.LocalStorage = new Class({
                             storage[name] = value;
                         }
                         , getItem : function (name){
-                            return ('value' in storage[name]) ? storage[name].value : null;
+                            return (storage[name]) ? storage[name].value : null;
                         }
                         , removeItem : function(name){
                             delete(storage[name]);
