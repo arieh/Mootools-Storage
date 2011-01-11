@@ -37,7 +37,7 @@ THE SOFTWARE
 */
 (function($,window,undef){
 
-window['LocalStorage'] = new Class({
+var LocalStorage = this.LocalStorage = new Class({
     Implements : [Options]
     , options : {
           path : '*'
@@ -85,7 +85,7 @@ window['LocalStorage'] = new Class({
                             storage[name] = value;
                         }
                         , getItem : function (name){
-                            return storage[name].value;
+                            return ('value' in storage[name]) ? storage[name].value : null;
                         }
                         , removeItem : function(name){
                             delete(storage[name]);
