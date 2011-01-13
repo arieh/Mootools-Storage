@@ -79,7 +79,7 @@ var LocalStorage = this.LocalStorage = new Class({
          }else if (window.globalStorage){ //FF<3.5
             if (this.options.debug) console.log('using globalStorage');
             this.storage = (function(){
-                storage = globalStorage[$this.options.name];
+                var storage = globalStorage[$this.options.name];
                 return {
                         setItem : function(name,value){
                             storage[name] = value;
