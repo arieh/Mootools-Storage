@@ -40,9 +40,9 @@ THE SOFTWARE
 var LocalStorage = this.LocalStorage = new Class({
     Implements : [Options]
     , options : {
-          path : '*'
+          path : '/'
         , name : window.location.hostname
-        , duration : 60*60*24*30
+        , duration : 30
         , debug : false
     }
     , storage : null
